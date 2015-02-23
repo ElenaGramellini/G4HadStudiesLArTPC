@@ -1,0 +1,19 @@
+[  7%] Generating src/ProdTuple_tDict.cxx, src/ProdTuple_tDict.h
+Scanning dependencies of target CrossSection
+[ 15%] Building CXX object CMakeFiles/CrossSection.dir/src/ProdTuple_t.cc.o
+[ 23%] Building CXX object CMakeFiles/CrossSection.dir/src/HadStackingAction.cc.o
+[ 30%] Building CXX object CMakeFiles/CrossSection.dir/src/HadRunAction.cc.o
+[ 38%] Building CXX object CMakeFiles/CrossSection.dir/src/TrackInfo_t.cc.o
+[ 46%] Building CXX object CMakeFiles/CrossSection.dir/src/HadDetectorMessenger.cc.o
+[ 53%] Building CXX object CMakeFiles/CrossSection.dir/src/HadDetectorConstruction.cc.o
+[ 61%] Building CXX object CMakeFiles/CrossSection.dir/src/HadEventActionMessenger.cc.o
+[ 69%] Building CXX object CMakeFiles/CrossSection.dir/src/HadAnalysis.cc.o
+[ 76%] Building CXX object CMakeFiles/CrossSection.dir/src/HadPrimaryGeneratorAction.cc.o
+/home/inutini/irene_thesis/G4_Analysis/G4HadStudies/src/HadPrimaryGeneratorAction.cc: In constructor ‘HadPrimaryGeneratorAction::HadPrimaryGeneratorAction()’:
+/home/inutini/irene_thesis/G4_Analysis/G4HadStudies/src/HadPrimaryGeneratorAction.cc:15: error: ‘class G4GeneralParticleSource’ has no member named ‘SetParticleMomentumDirection’
+/home/inutini/irene_thesis/G4_Analysis/G4HadStudies/src/HadPrimaryGeneratorAction.cc: In member function ‘virtual void HadPrimaryGeneratorAction::GeneratePrimaries(G4Event*)’:
+/home/inutini/irene_thesis/G4_Analysis/G4HadStudies/src/HadPrimaryGeneratorAction.cc:40: error: no matching function for call to ‘HadAnalysis::GetPrimGenInfo(G4double&, G4ParticleDefinition*&)’
+/home/inutini/irene_thesis/G4_Analysis/G4HadStudies/include/HadAnalysis.hh:45: note: candidates are: void HadAnalysis::GetPrimGenInfo(Double_t, Double_t, G4ParticleDefinition*)
+gmake[2]: *** [CMakeFiles/CrossSection.dir/src/HadPrimaryGeneratorAction.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/CrossSection.dir/all] Error 2
+gmake: *** [all] Error 2
